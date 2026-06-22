@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Home Digital Twin by Vineeth Velmurugan: a Rust-powered 3D smart home model with rooms, devices, sensors, and automations."
+    />
+    <title>Home Digital Twin | Vineeth Makes</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="viewport" aria-label="3D home digital twin">
+        <canvas id="scene"></canvas>
+      </section>
+
+      <aside class="panel" aria-label="Home state">
+        <div class="brand">
+          <span>Vineeth Makes</span>
+          <h1>Home Digital Twin</h1>
+          <p>Rust-modeled rooms, devices, sensor state, and automations rendered as an interactive 3D home view.</p>
+        </div>
+
+        <div class="metrics" id="metrics"></div>
+
+        <div class="controls">
+          <button id="playPause" type="button" aria-pressed="true">Pause</button>
+          <button id="step" type="button">Step</button>
+        </div>
+
+        <div class="detail" id="detail"></div>
+        <div class="alerts" id="alerts"></div>
+      </aside>
+    </main>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>

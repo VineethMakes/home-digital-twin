@@ -1,0 +1,21 @@
+[package]
+name = "home-twin"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+description = "Rust state model and automation engine for a browser-rendered home digital twin."
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
+wasm-bindgen = { version = "0.2", optional = true }
+
+[features]
+default = []
+wasm = ["wasm-bindgen"]

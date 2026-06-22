@@ -1,0 +1,9 @@
+[workspace]
+members = ["crates/home-twin"]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/VineethMakes/home-digital-twin"
+authors = ["Vineeth Velmurugan <277117438+VineethMakes@users.noreply.github.com>"]
